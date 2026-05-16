@@ -61,15 +61,15 @@ function Nav() {
       }`}
     >
       <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-5 md:px-12 md:py-7">
-        <a href="#top" className="font-display text-[11px] tracking-brutal text-foreground">
-          C. Civantos
+        <a href="#top" className="text-[11px] tracking-widest text-foreground">
+          Carlos Civantos
         </a>
         <ul className="hidden gap-10 md:flex">
           {items.map(([label, href]) => (
             <li key={href}>
               <a
                 href={href}
-                className="font-display text-[10px] tracking-brutal text-muted-foreground transition-colors hover:text-accent"
+                className="text-[10px] tracking-widest text-muted-foreground transition-colors hover:text-accent"
               >
                 {label}
               </a>
@@ -78,7 +78,7 @@ function Nav() {
         </ul>
         <a
           href="#work"
-          className="font-display text-[10px] tracking-brutal text-foreground transition-colors hover:text-accent"
+          className="text-[10px] tracking-widest text-foreground transition-colors hover:text-accent"
         >
           Listen
         </a>
@@ -101,11 +101,11 @@ function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background" />
 
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center px-6 text-center">
-        <span className="font-display text-[10px] tracking-brutal text-accent">Portfolio · MMXXV</span>
-        <h1 className="mt-8 font-display text-[14vw] leading-[0.9] text-foreground md:text-[8.5vw]">
+        <span className="text-[10px] tracking-widest text-accent">Portfolio · MMXXV</span>
+        <h1 className="mt-8 font-display font-bold text-[14vw] leading-[0.9] text-foreground md:text-[8.5vw]">
           Carlos
           <br />
-          Civantos
+          <span className="italic font-normal">Civantos</span>
         </h1>
         <p className="mt-10 max-w-md text-sm font-light tracking-[0.18em] text-muted-foreground uppercase">
           Composer · Pianist · Synthesist
@@ -116,13 +116,13 @@ function Hero() {
           className="group mt-16 inline-flex items-center gap-4 border border-border/60 px-8 py-4 transition-colors hover:border-accent"
         >
           <Play className="h-3.5 w-3.5 text-accent" strokeWidth={1.5} />
-          <span className="font-display text-[10px] tracking-brutal text-foreground transition-colors group-hover:text-accent">
+          <span className="text-[10px] tracking-widest text-foreground transition-colors group-hover:text-accent">
             Listen
           </span>
         </a>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 font-display text-[9px] tracking-brutal text-muted-foreground">
+      <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-[9px] tracking-widest text-muted-foreground">
         Scroll
       </div>
     </section>
@@ -134,8 +134,8 @@ function About() {
     <section id="about" className="relative w-full border-t border-border/30 py-32 md:py-48">
       <div className="mx-auto grid max-w-[1500px] grid-cols-1 gap-16 px-6 md:grid-cols-12 md:gap-24 md:px-12">
         <div className="reveal md:col-span-6">
-          <span className="font-display text-[10px] tracking-brutal text-accent">01 — About</span>
-          <h2 className="mt-8 font-display text-5xl leading-[0.95] text-foreground md:text-7xl">
+          <span className="text-[10px] tracking-widest text-accent">01 — About</span>
+          <h2 className="mt-8 font-display font-bold text-5xl leading-[0.95] text-foreground md:text-7xl">
             A pianist
             <br />
             writing for
@@ -195,13 +195,13 @@ function WorkCard({
 
       <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-10">
         <div className="flex items-center justify-between">
-          <span className="font-display text-[10px] tracking-brutal text-accent">{work.year}</span>
+          <span className="text-[10px] tracking-widest text-accent">{work.year}</span>
           <ArrowUpRight
             className="h-4 w-4 text-foreground opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:text-accent"
             strokeWidth={1.25}
           />
         </div>
-        <h3 className="mt-4 font-display text-3xl text-foreground md:text-4xl">{work.title}</h3>
+        <h3 className="mt-4 font-display font-bold text-3xl text-foreground md:text-4xl">{work.title}</h3>
         <p className="mt-3 max-w-xs translate-y-2 text-xs font-light tracking-widest uppercase text-muted-foreground opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
           {work.kind}
         </p>
@@ -251,8 +251,8 @@ function WorkModal({
           <img src={work.img} alt={work.title} className="h-full w-full object-cover" />
         </div>
         <div className="flex flex-col justify-center">
-          <span className="font-display text-[10px] tracking-brutal text-accent">{work.year} · {work.kind}</span>
-          <h3 className="mt-6 font-display text-5xl text-foreground md:text-6xl">{work.title}</h3>
+          <span className="text-[10px] tracking-widest text-accent">{work.year} · {work.kind}</span>
+          <h3 className="mt-6 font-display font-bold text-5xl text-foreground md:text-6xl">{work.title}</h3>
           <div className="mt-8 h-px w-12 bg-accent" />
           <p className="mt-8 max-w-sm text-sm font-light leading-relaxed text-muted-foreground">
             An excerpt from the score. Built around piano, modular textures and a small string section
@@ -271,7 +271,7 @@ function WorkModal({
                 <div className="h-px w-full bg-border">
                   <div className="h-px w-1/3 bg-accent" />
                 </div>
-                <div className="mt-2 flex justify-between font-display text-[9px] tracking-brutal text-muted-foreground">
+                <div className="mt-2 flex justify-between text-[9px] tracking-widest text-muted-foreground">
                   <span>00:42</span>
                   <span>02:18</span>
                 </div>
@@ -292,8 +292,8 @@ function Work() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-12">
         <div className="reveal flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <span className="font-display text-[10px] tracking-brutal text-accent">02 — Selected Work</span>
-            <h2 className="mt-6 font-display text-5xl leading-[0.95] text-foreground md:text-7xl">
+            <span className="text-[10px] tracking-widest text-accent">02 — Selected Work</span>
+            <h2 className="mt-6 font-display font-bold text-5xl leading-[0.95] text-foreground md:text-7xl">
               Portfolio
             </h2>
           </div>
@@ -321,8 +321,8 @@ function Studio() {
     <section id="studio" className="relative w-full border-t border-border/30 py-32 md:py-48">
       <div className="mx-auto max-w-[1600px] px-6 md:px-12">
         <div className="reveal max-w-3xl">
-          <span className="font-display text-[10px] tracking-brutal text-accent">03 — Studio</span>
-          <h2 className="mt-6 font-display text-5xl leading-[0.95] text-foreground md:text-7xl">
+          <span className="text-[10px] tracking-widest text-accent">03 — Studio</span>
+          <h2 className="mt-6 font-display font-bold text-5xl leading-[0.95] text-foreground md:text-7xl">
             The room
             <br />
             <span className="text-muted-foreground">is the instrument.</span>
@@ -372,8 +372,8 @@ function Contact() {
       className="relative flex w-full items-center justify-center border-t border-border/30 px-6 py-32"
     >
       <div className="reveal mx-auto flex max-w-4xl flex-col items-center text-center">
-        <span className="font-display text-[10px] tracking-brutal text-accent">04 — Contact</span>
-        <h2 className="mt-8 font-display text-5xl leading-[0.95] text-foreground md:text-8xl">
+        <span className="text-[10px] tracking-widest text-accent">04 — Contact</span>
+        <h2 className="mt-8 font-display font-bold text-5xl leading-[0.95] text-foreground md:text-8xl">
           Let&apos;s create
           <br />
           something
@@ -385,7 +385,7 @@ function Contact() {
 
         <a
           href="mailto:hello@carloscivantos.com"
-          className="mt-12 font-display text-base tracking-brutal text-foreground transition-colors hover:text-accent md:text-2xl"
+          className="mt-12 text-base tracking-widest text-foreground transition-colors hover:text-accent md:text-2xl"
         >
           hello@carloscivantos.com
         </a>
@@ -417,10 +417,10 @@ function Footer() {
   return (
     <footer className="border-t border-border/30 py-10">
       <div className="mx-auto flex max-w-[1600px] flex-col items-center justify-between gap-4 px-6 md:flex-row md:px-12">
-        <span className="font-display text-[9px] tracking-brutal text-muted-foreground">
+        <span className="text-[9px] tracking-widest text-muted-foreground">
           © {new Date().getFullYear()} Carlos Civantos
         </span>
-        <span className="font-display text-[9px] tracking-brutal text-muted-foreground">
+        <span className="text-[9px] tracking-widest text-muted-foreground">
           Utrecht · NL
         </span>
       </div>
