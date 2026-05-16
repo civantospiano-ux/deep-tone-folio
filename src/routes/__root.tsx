@@ -75,11 +75,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Carlos Civantos — Composer · Pianist · Synthesist" },
       { name: "description", content: "Portfolio of Carlos Civantos — film composer, pianist and synthesist." },
       { name: "author", content: "Carlos Civantos" },
-      { property: "og:title", content: "Carlos Civantos" },
-      { property: "og:description", content: "Composer · Pianist · Synthesist" },
+      { property: "og:title", content: "Carlos Civantos — Composer · Pianist · Synthesist" },
+      { property: "og:description", content: "Portfolio of Carlos Civantos — film composer, pianist and synthesist." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Carlos Civantos — Composer · Pianist · Synthesist" },
+      { name: "twitter:description", content: "Portfolio of Carlos Civantos — film composer, pianist and synthesist." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c6ab57a7-98e2-4669-8de5-c23d59ed81be/id-preview-8824ea91--95f43e5e-a9ad-48e1-8747-2eb0a322c7ee.lovable.app-1778890863021.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c6ab57a7-98e2-4669-8de5-c23d59ed81be/id-preview-8824ea91--95f43e5e-a9ad-48e1-8747-2eb0a322c7ee.lovable.app-1778890863021.png" },
     ],
     links: [
       {
