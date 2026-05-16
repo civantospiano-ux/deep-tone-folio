@@ -369,7 +369,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="relative flex min-h-screen w-full items-center justify-center border-t border-border/30 px-6 py-32"
+      className="relative flex w-full items-center justify-center border-t border-border/30 px-6 py-32"
     >
       <div className="reveal mx-auto flex max-w-4xl flex-col items-center text-center">
         <span className="font-display text-[10px] tracking-brutal text-accent">04 — Contact</span>
