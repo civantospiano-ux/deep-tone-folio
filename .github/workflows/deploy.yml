@@ -47,6 +47,7 @@ jobs:
           curl -sL http://localhost:8787/ > dist-static/index.html
           cp -r dist/client/assets dist-static/assets
           touch dist-static/.nojekyll
+          echo "carloscivantos.com" > dist-static/CNAME
           kill $WRANGLER_PID 2>/dev/null || true
 
       - name: Upload artifact
