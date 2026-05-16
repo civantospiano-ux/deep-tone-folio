@@ -44,7 +44,7 @@ jobs:
             sleep 1
           done
           mkdir -p dist-static
-          curl -s http://localhost:8787/ > dist-static/index.html
+          curl -sL http://localhost:8787/ > dist-static/index.html
           cp -r dist/client/assets dist-static/assets
           touch dist-static/.nojekyll
           kill $WRANGLER_PID 2>/dev/null || true
