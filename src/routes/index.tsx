@@ -127,7 +127,7 @@ function Hero() {
     <section id="top" className="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
       <img
         src={hero}
-        alt="Grand piano in a dimly lit studio"
+        alt="Korg MS-20 synthesizer"
         width={1920}
         height={1280}
         className="absolute inset-0 h-full w-full object-cover"
@@ -192,10 +192,10 @@ function About() {
           <div className="relative aspect-[3/4] w-full overflow-hidden">
             <img
               src={about}
-              alt="Hands playing a piano in low light"
+              alt="Carlos Civantos"
               loading="lazy"
-              width={1280}
-              height={1600}
+              width={1024}
+              height={1280}
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-background/30" />
